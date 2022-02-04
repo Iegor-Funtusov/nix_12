@@ -11,6 +11,7 @@
 
     <modules>
         <module>unit_1_base_operations</module>
+        <module>unit_3_java_key</module>
     </modules>
 
     <properties>
