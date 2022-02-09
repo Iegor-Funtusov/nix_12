@@ -1,5 +1,6 @@
 package ua.com.alevel;
 
+import lombok.SneakyThrows;
 import ua.com.alevel.entity.Car;
 import ua.com.alevel.entity.CarModel;
 import ua.com.alevel.service.CarService;
@@ -37,7 +38,8 @@ public class ProgramRun {
         System.out.println("If you want exit, please enter 0");
     }
 
-    private static void caseLogic(BufferedReader reader) throws IOException {
+    @SneakyThrows
+    private static void caseLogic(BufferedReader reader) {
         String line = reader.readLine();
         switch (line) {
             case "1" -> create(reader);
