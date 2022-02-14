@@ -29,6 +29,7 @@ public class UserController {
     @GetMapping("/new")
     public String redirectToNewUser(Model model) {
         model.addAttribute("user", new User());
+        model.addAttribute("users3", userService.findAll());
         return "user_new";
     }
 
