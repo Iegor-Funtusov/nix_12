@@ -6,6 +6,7 @@ package ua.com.alevel;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
+import java.util.ArrayList;
 
 public class Main {
 
@@ -17,7 +18,6 @@ public class Main {
     }
 
     public static void main(String[] args) throws IllegalAccessException {
-
 //        User u1 = new User();
 //        u1.setName("Ivan");
 //        System.out.println("u1 = " + u1);
@@ -36,17 +36,17 @@ public class Main {
 //        }
 //        System.out.println("finalUser = " + finalUser);
 
-        RecordUser recordUser = new RecordUser("Ivan");
-        System.out.println("recordUser = " + recordUser);
-        System.out.println("recordUser name = " + recordUser.name());
-
-        User user = new User();
-        user.setName("Ivan");
-        RecordObject recordObjectOnlyIvan = new RecordObject(user);
-        System.out.println("recordObjectOnlyIvan = " + recordObjectOnlyIvan.user());
-
-        user.setName("Durak");
-        System.out.println("recordObjectOnlyIvan = " + recordObjectOnlyIvan.user());
+//        RecordUser recordUser = new RecordUser("Ivan");
+//        System.out.println("recordUser = " + recordUser);
+//        System.out.println("recordUser name = " + recordUser.name());
+//
+//        User user = new User();
+//        user.setName("Ivan");
+//        RecordObject recordObjectOnlyIvan = new RecordObject(user);
+//        System.out.println("recordObjectOnlyIvan = " + recordObjectOnlyIvan.user());
+//
+//        user.setName("Durak");
+//        System.out.println("recordObjectOnlyIvan = " + recordObjectOnlyIvan.user());
 
 
 
