@@ -17,6 +17,8 @@
         <module>string_lib</module>
         <module>unit_6_solid</module>
         <module>di</module>
+        <module>unit_7_evolution_from_stupid_app_to_best_practices</module>
+        <module>di_nix</module>
     </modules>
 
     <properties>
