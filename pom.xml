@@ -19,6 +19,7 @@
         <module>di</module>
         <module>unit_7_evolution_from_stupid_app_to_best_practices</module>
         <module>di_nix</module>
+        <module>unit_8_collection</module>
     </modules>
 
     <properties>
