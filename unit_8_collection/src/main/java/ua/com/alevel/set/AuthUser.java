@@ -1,5 +1,6 @@
 package ua.com.alevel.set;
 
+//public class AuthUser implements Comparable<AuthUser> {
 public class AuthUser {
 
     private String email;
@@ -50,5 +51,14 @@ public class AuthUser {
         int result = email != null ? email.hashCode() : 0;
         result = 31 * result + (id != null ? id.hashCode() : 0);
         return result;
+    }
+
+//    @Override
+    public int compareTo(AuthUser o) {
+        int compareId = this.id.compareTo(o.getId());
+        if (compareId == 0) {
+            return this.email.compareTo(o.getEmail());
+        }
+        return compareId;
     }
 }
