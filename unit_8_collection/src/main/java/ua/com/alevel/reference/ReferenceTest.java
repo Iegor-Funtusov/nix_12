@@ -42,7 +42,7 @@ public class ReferenceTest {
 
 
         List<Customer> customers = new ArrayList<>();
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 5; i++) {
             customers.add(new Customer("first" + i, "last" + i));
         }
         System.out.println("customers = " + customers);
@@ -64,6 +64,8 @@ public class ReferenceTest {
 
         List<String> names = customers
                 .stream()
+                .skip(1)
+                .limit(2)
                 .map(CustomerDto::new) // 4
                 .map(CustomerDto::getFullName)
                 .toList();
